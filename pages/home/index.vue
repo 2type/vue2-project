@@ -15,9 +15,9 @@
             },
             sendRequest: async function () {
                 const vm = this
-                let [resp, err] = await api.eaxmpleNews()
+                let [resp, err] = await apiws()
                 if (err) {
-                    vm.$message(err.message)
+                    vm.$message(err.m.eaxmpleNeessage)
                     return
                 }
                 console.log(resp)

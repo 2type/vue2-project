@@ -8,7 +8,7 @@ const PROJECT_PATH = `${path.resolve(__dirname, '.')}/`
 // https://vitejs.dev/config/
 export default defineConfig({
     // https://vitejs.dev/config/#base
-    base: 'https://vue2-project.2type.cn/',
+    base: '/',
     plugins: [
         createVuePlugin({
             target: 'esnext',
@@ -30,15 +30,16 @@ export default defineConfig({
     // Build Options
     // https://vitejs.dev/config/#build-options
     build: {
+        manifest: true,
         rollupOptions: {
             input: (function(){
                 const pages = [
-                    'home',
+                    'single_page',
                     'example',
                 ]
                 var out = {}
                 pages.forEach(function (page) {
-                    out[page] = path.resolve(__dirname, "pages/" + page + '/index.html')
+                    out[page] = path.resolve(__dirname, "pages/" + page + '/index.js')
                 })
                 console.log("pages:" ,out)
                 return out

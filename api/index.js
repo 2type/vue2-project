@@ -13,14 +13,15 @@ function base(options) {
     }
     return new Promise( async function(resolve){
         $.ajax(options).done(function (resp) {
-            // 不要从 resp.error 获取错误信息,而是 从 const [resp,err] = await some() 的 err 获取信息
+            resp.error = resp.error || {code:0,message:""}
             if (resp.error.code === 0) {
-                resp.error = undefined
+                // 不要从 resp.error 获取错误信息,而是 从 const [resp,err] = await some() 的 err 获取信息
+                delete resp.error
                 resolve([resp, null])
             } else {
                 const err = resp.error
                 // 不要从 resp.error 获取错误信息,而是 const [resp,err] = await some()
-                resp.error = undefined
+                delete resp.error
                 resolve([resp, err])
             }
 

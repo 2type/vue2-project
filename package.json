@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "mock": "go run mock.go",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
