@@ -1,13 +1,19 @@
 <template>
     <div>
-        home
+        <div class="title">home</div>
         <el-button @click="clickButton">{{$store.state.exampleCount}}</el-button>
         <el-button @click="sendRequest" >send ajax</el-button>
+        <hr/>
+        <Demo></Demo>
     </div>
 </template>
 <script>
     import * as api from "../../api"
+    import Demo from "@/uniapp/m/demo/index.vue"
     export default {
+        components:{
+            Demo
+        },
         methods: {
             clickButton(){
                 const vm = this
@@ -30,3 +36,6 @@
         }
     }
 </script>
+<style>
+
+</style>
