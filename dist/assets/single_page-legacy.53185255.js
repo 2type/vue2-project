@@ -11,5 +11,5 @@
 //
 //
 //
-var __vue2_script={data:function data(){return{message:""};}};var __cssModules={};var __component__=/*#__PURE__*/normalizeComponent(__vue2_script,render,staticRenderFns,false,__vue2_injectStyles,null,null,null);function __vue2_injectStyles(context){for(var o in __cssModules){this[o]=__cssModules[o];}}var App=/*#__PURE__*/function(){return __component__.exports;}();// import store from './store';
+var __vue2_script={data:function data(){return{message:"3"};}};var __cssModules={};var __component__=/*#__PURE__*/normalizeComponent(__vue2_script,render,staticRenderFns,false,__vue2_injectStyles,null,null,null);function __vue2_injectStyles(context){for(var o in __cssModules){this[o]=__cssModules[o];}}var App=/*#__PURE__*/function(){return __component__.exports;}();// import store from './store';
 Vue.use(ElementUI);new Vue({router:router,store:store,render:function render(h){return h(App);}}).$mount('#app');}};});})();
