@@ -17,6 +17,8 @@
     "element-ui": "^2.15.6",
     "jquery": "^3.6.0",
     "less": "^4.1.2",
+    "less-plugin-functions": "^1.0.0",
+    "less-plugin-rpxtorem": "^0.0.2",
     "vite-plugin-env-compatible": "^1.1.1",
     "vite-plugin-vue2": "^1.9.2",
     "vue": "^2.6.14",

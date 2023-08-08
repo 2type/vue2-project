@@ -1167,6 +1167,16 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+less-plugin-functions@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/less-plugin-functions/-/less-plugin-functions-1.0.0.tgz#c4fe10f681aae0a806daf9f412d20f013e10d247"
+  integrity sha512-b4uburxseatVvycnRjzPOB4AvCmrwhwWh48MUHlE+itWinNm+Ipd2ADVHB3FyS0L4W+/mzofLNwr9lhvofuRIg==
+
+less-plugin-rpxtorem@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/less-plugin-rpxtorem/-/less-plugin-rpxtorem-0.0.2.tgz#53d6e0e6bd0deeed4c1094077de5e103ec45a806"
+  integrity sha512-Jn2DUUSanLLcNv3D6hwl9EOSw5VzcDJDW2GQrRBvl29VywF0f+ZuCQsXIQ5MSUTiAYaZ4KicgjgJUcypJZN6Aw==
+
 less@^4.1.2:
   version "4.1.2"
   resolved "https://registry.npmmirror.com/less/-/less-4.1.2.tgz#6099ee584999750c2624b65f80145f8674e4b4b0"
