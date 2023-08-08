@@ -5,3 +5,4 @@ dist-ssr
 .idea/
 vendor
 uniapp/.hbuilderx/launch.json
+dist
