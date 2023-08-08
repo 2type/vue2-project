@@ -1,6 +1,6 @@
 {
   "pages/single_page/index-legacy.js": {
-    "file": "assets/single_page-legacy.7c253486.js",
+    "file": "assets/single_page-legacy.6858d1da.js",
     "src": "pages/single_page/index-legacy.js",
     "isEntry": true,
     "imports": [
@@ -58,7 +58,7 @@
     "isEntry": true
   },
   "pages/single_page/index.js": {
-    "file": "assets/single_page.772cd881.js",
+    "file": "assets/single_page.c90949dd.js",
     "src": "pages/single_page/index.js",
     "isEntry": true,
     "imports": [
