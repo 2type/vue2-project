@@ -2,6 +2,8 @@ import { defineConfig } from 'vite';
 import legacy from '@vitejs/plugin-legacy'
 import { createVuePlugin } from 'vite-plugin-vue2';
 import envCompatible from 'vite-plugin-env-compatible';
+const LessPluginFunctions = require('less-plugin-functions')
+var RpxToremPlugin = require('less-plugin-rpxtorem');
 import path from 'path';
 const PROJECT_PATH = `${path.resolve(__dirname, '.')}/`
 
@@ -15,7 +17,7 @@ export default defineConfig({
         }),
         envCompatible(),
         legacy({
-            targets: ['ie >= 11'],
+            targets: ['defaults', 'ie >= 11', 'chrome 52'],
             additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
         }),
     ],
@@ -26,6 +28,18 @@ export default defineConfig({
                 replacement: PROJECT_PATH,
             },
         ]
+    },
+    css: {
+        preprocessorOptions: {
+            less:{
+                plugins: [
+                    new RpxToremPlugin({
+                        width:750,
+                    }),
+                    new LessPluginFunctions(),
+                ]
+            },
+        },
     },
     // Build Options
     // https://vitejs.dev/config/#build-options
@@ -50,6 +64,5 @@ export default defineConfig({
                 ],
             },
         },
-        target: 'es2015',
     },
 });
