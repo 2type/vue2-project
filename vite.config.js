@@ -50,6 +50,6 @@ export default defineConfig({
                 ],
             },
         },
-        target: 'es2021',
+        target: 'es2015',
     },
 });
